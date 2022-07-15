@@ -242,14 +242,14 @@ def setup_finished_animation():
                 
 
             def second():
-                applink = urllib2.urlopen('https://drive.google.com/u/2/uc?id=1DmdKVNgoI01X1eKExGHzRMNnT7wcFTQu&export=download&confirm=t&uuid=65f53607-95fa-4ae8-9360-a4182b2b6e15')
+                applink = urllib2.urlopen('Link to BehaviourApp.pyw')
                 contents = applink.read()
 
                 this_file = Path(__file__)
                 myfile = this_file / ".." / "BehaviourApp.pyw"
                 myfile.write_bytes(contents)
 
-                applink2 = urllib2.urlopen('https://drive.google.com/u/2/uc?id=15XKyEGaEsPoFDigcTju5OL2zgXUpGEkA&export=download&confirm=t&uuid=82b70616-a105-4d32-a741-80c3f1c60906')
+                applink2 = urllib2.urlopen('Link to updater')
                 contents = applink2.read()
 
                 this_file = Path(__file__)
@@ -275,7 +275,7 @@ def setup_finished_animation():
             myfile = this_file / ".." / "username.txt"
             myfile.write_text(newusername)
 
-            verlink = urllib2.urlopen('https://drive.google.com/u/2/uc?id=19js8ABpL7aM_WsQSGHSdqnrApdcGYdQa&export=download')
+            verlink = urllib2.urlopen('Link to version number')
             contents = verlink.read()
 
             this_file = Path(__file__)
