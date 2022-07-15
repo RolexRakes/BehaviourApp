@@ -93,7 +93,7 @@ def update():
 
 def checkupdates():
     global version
-    verlink = urllib2.urlopen('https://drive.google.com/u/2/uc?id=19js8ABpL7aM_WsQSGHSdqnrApdcGYdQa&export=download')
+    verlink = urllib2.urlopen('Link to the latest version number')
     contents = verlink.read()
 
     this_file = Path(__file__)
