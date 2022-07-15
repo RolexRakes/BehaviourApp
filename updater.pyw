@@ -86,14 +86,14 @@ def anim():
     window.after(10, anim)
 
 def update():
-    applink = urllib2.urlopen('https://drive.google.com/u/2/uc?id=1DmdKVNgoI01X1eKExGHzRMNnT7wcFTQu&export=download&confirm=t&uuid=65f53607-95fa-4ae8-9360-a4182b2b6e15')
+    applink = urllib2.urlopen('Link to latest BehaviourApp .pyw file')
     contents = applink.read()
 
     this_file = Path(__file__)
     myfile = this_file / ".." / "BehaviourApp.pyw"
     myfile.write_bytes(contents)
 
-    verlink = urllib2.urlopen('https://drive.google.com/u/2/uc?id=19js8ABpL7aM_WsQSGHSdqnrApdcGYdQa&export=download')
+    verlink = urllib2.urlopen('Link to the version number')
     contents = verlink.read()
 
     this_file = Path(__file__)
